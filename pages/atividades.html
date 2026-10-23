@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de experimentos interativos de matemática e física.">
+  <title>Cienvolva — Todas as atividades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/tailwind-config.js"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased" data-page="atividades-experimentos">
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-lg">
+    <a class="flex items-center gap-space-sm group" data-path="inicio" href="../index.html">
+      <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+        <span class="material-symbols-outlined text-on-primary text-[24px]">science</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="font-display text-headline-sm text-primary leading-none tracking-tight">Cienvolva</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide">Matemática &amp; Física</span>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-space-sm">
+      <a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="../index.html">Início</a>
+      <a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="atividades-experimentos" href="../pages/atividades.html">Atividades / Experimentos</a>
+      <a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre" href="#sobre">Sobre</a>
+    </nav>
+    <div class="flex items-center gap-space-md">
+      <a class="flex items-center gap-space-sm pl-space-sm pr-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors" data-path="acesso-perfil" href="#perfil">
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </div>
+        <span class="hidden sm:inline font-label-lg text-label-lg text-on-surface font-semibold">Meu Perfil</span>
+      </a>
+    </div>
+  </div>
+  <div class="w-full h-[6px] flex overflow-hidden">
+    <div class="flex-1 bg-secondary"></div>
+    <div class="flex-1 bg-primary"></div>
+    <div class="flex-1 bg-secondary-fixed"></div>
+    <div class="flex-1 bg-secondary-container"></div>
+    <div class="flex-1 bg-tertiary-container"></div>
+    <div class="flex-1 bg-secondary-fixed-dim"></div>
+  </div>
+</header>
+<main class="w-full pt-20 bg-surface min-h-[calc(100vh-16rem)]">
+  <div class="max-w-[1200px] mx-auto px-gutter">
+      <div class="flex flex-col w-full pb-space-xl">
+        <!-- Subtle Background Coordinate Watermark Layers -->
+        <div class="relative w-full overflow-hidden pt-space-lg pb-space-xl">
+          <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-[900px] h-72 bg-gradient-to-r from-secondary-fixed/20 via-primary-fixed/25 to-tertiary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10">
+          </div>
+          <!-- Header Hero Banner with Typographic Precision -->
+          <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-primary mb-space-sm shadow-sm">
+              <span class="material-symbols-outlined text-[16px]">
+                biotech
+              </span>
+              <span class="font-label-md text-label-md tracking-wider uppercase">
+                Laboratório Virtual • Catálogo Completo
+              </span>
+            </div>
+            <h1 class="font-display text-display text-on-surface tracking-tight font-extrabold mb-space-sm">
+              Todas as atividades
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Explore simulações interativas para aprender conceitos práticos de matemática e física com visualizações em tempo real e parâmetros ajustáveis.
+            </p>
+            <!-- Search & Filter Quick Bar -->
+            <div class="w-full max-w-3xl mt-space-xl flex flex-col gap-space-md">
+              <!-- Main Search Input with floating actions -->
+              <div class="relative w-full flex items-center bg-surface-container-lowest rounded-xl shadow-md p-space-xs">
+                <div class="pl-space-md text-on-surface-variant flex items-center">
+                  <span class="material-symbols-outlined text-[24px]">
+                    search
+                  </span>
+                </div>
+                <input class="w-full bg-transparent px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none placeholder:text-outline" id="activity-search-input" placeholder="Buscar por nome do experimento, fórmula ou conceito (ex: Gravidade, Pitágoras)..." type="text">
+                <button class="bg-primary hover:bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm transition-all transform active:scale-95">
+                  <span>
+                    Filtrar
+                  </span>
+                  <span class="material-symbols-outlined text-[18px]">
+                    tune
+                  </span>
+                </button>
+              </div>
+              <!-- Filter Chips Carousel / Bar -->
+              <div class="flex items-center justify-between gap-space-sm w-full overflow-hidden">
+                <div class="flex items-center gap-space-xs overflow-x-auto py-space-xs scrollbar-none" id="filter-chips-container">
+                  <button class="filter-chip active-filter flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm transition-all" data-filter="all">
+                    <span class="material-symbols-outlined text-[14px]">
+                      apps
+                    </span>
+                    Todos
+                  </button>
+                  <button class="filter-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-all" data-filter="matematica">
+                    <span class="material-symbols-outlined text-[14px]">
+                      calculate
+                    </span>
+                    Matemática
+                  </button>
+                  <button class="filter-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-all" data-filter="fisica">
+                    <span class="material-symbols-outlined text-[14px]">
+                      speed
+                    </span>
+                    Física
+                  </button>
+                  <button class="filter-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-all" data-filter="mecanica">
+                    Mecânica
+                  </button>
+                  <button class="filter-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-all" data-filter="termodinamica">
+                    Termodinâmica
+                  </button>
+                  <button class="filter-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-all" data-filter="geometria">
+                    Geometria
+                  </button>
+                  <button class="filter-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-all" data-filter="fundamental">
+                    Ensino Fundamental
+                  </button>
+                  <button class="filter-chip flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-all" data-filter="medio">
+                    Ensino Médio
+                  </button>
+                </div>
+                <!-- Counter indicator -->
+                <div class="hidden lg:flex items-center pl-space-sm whitespace-nowrap">
+                  <span class="font-label-sm text-label-sm text-outline">
+                    6 de 24 simuladores
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Experiments Desktop Grid: 3 Columns -->
+        <div class="w-full mt-space-md">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xl" id="cards-grid">
+            <!-- CARD 1: Queda Livre e Gravidade -->
+            <article class="group bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div>
+                <!-- Thumbnail Area with Graphic Badge -->
+                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container flex items-center justify-center">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern physics simulation interface of free fall and planetary gravity with high clarity spheres in gradient indigo and cyan, floating coordinate lines and velocity vectors against a clean scientific background, photorealistic digital educational software graphic." src="../images/experimentos/queda-livre.jpg" alt="Modern physics simulation interface of free fall and planetary gravity with high clarity spheres in gradient indigo and cyan, floating coordinate lines and velocity vectors against a clean scientific background, photorealistic digital educational software graphic.">
+                  <!-- Visual Overlay Badges -->
+                  <div class="absolute top-space-sm left-space-sm">
+                    <span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-lowest/90 backdrop-blur-md font-label-md text-label-md text-primary font-bold shadow-sm">
+                      Experimento 01
+                    </span>
+                  </div>
+                  <div class="absolute bottom-space-sm right-space-sm">
+                    <span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-on-surface/80 backdrop-blur-md font-label-sm text-label-sm text-on-primary">
+                      <span class="material-symbols-outlined text-[13px] text-secondary-fixed">
+                        timer
+                      </span>
+                      10 min • Prático
+                    </span>
+                  </div>
+                </div>
+                <!-- Tags & Category Chips -->
+                <div class="flex items-center gap-space-xs mt-space-md flex-wrap">
+                  <span class="px-space-sm py-space-xs rounded-lg bg-secondary-fixed/20 text-secondary font-label-sm text-label-sm font-semibold">
+                    Física
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Mecânica
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Gravitação
+                  </span>
+                </div>
+                <!-- Title and Description -->
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm font-bold tracking-tight group-hover:text-primary transition-colors">
+                  Queda Livre e Gravidade
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs line-clamp-2 leading-relaxed">
+                  Analise a aceleração de corpos com massas variadas em vácuo e com resistência do ar em diferentes planetas.
+                </p>
+              </div>
+              <!-- Action Section -->
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <div class="flex items-center gap-space-xs text-outline">
+                  <span class="material-symbols-outlined text-[18px]">
+                    signal_cellular_alt
+                  </span>
+                  <span class="font-label-sm text-label-sm">
+                    Intermediário
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors shadow-sm group-hover:shadow-md" data-path="experimento-queda-livre" href="#">
+                  <span>
+                    Iniciar Simulação
+                  </span>
+                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+            </article>
+            <!-- CARD 2: Onda Harmônica e Frequência -->
+            <article class="group bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div>
+                <!-- Thumbnail Area with Graphic Badge -->
+                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container flex items-center justify-center">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Digital harmonic wave physics oscillator demonstration with vivid electric blue sinusoidal waves on an oscilloscope grid, nodes and antinodes markers, sleek minimal laboratory UI." src="../images/experimentos/onda-harmonica.jpg" alt="Digital harmonic wave physics oscillator demonstration with vivid electric blue sinusoidal waves on an oscilloscope grid, nodes and antinodes markers, sleek minimal laboratory UI.">
+                  <div class="absolute top-space-sm left-space-sm">
+                    <span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-lowest/90 backdrop-blur-md font-label-md text-label-md text-primary font-bold shadow-sm">
+                      Experimento 02
+                    </span>
+                  </div>
+                  <div class="absolute bottom-space-sm right-space-sm">
+                    <span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-on-surface/80 backdrop-blur-md font-label-sm text-label-sm text-on-primary">
+                      <span class="material-symbols-outlined text-[13px] text-secondary-fixed">
+                        graphic_eq
+                      </span>
+                      15 min • Ondulatória
+                    </span>
+                  </div>
+                </div>
+                <!-- Tags & Category Chips -->
+                <div class="flex items-center gap-space-xs mt-space-md flex-wrap">
+                  <span class="px-space-sm py-space-xs rounded-lg bg-secondary-fixed/20 text-secondary font-label-sm text-label-sm font-semibold">
+                    Física
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Ondulatória
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Acústica
+                  </span>
+                </div>
+                <!-- Title and Description -->
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm font-bold tracking-tight group-hover:text-primary transition-colors">
+                  Onda Harmônica e Frequência
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs line-clamp-2 leading-relaxed">
+                  Manipule amplitude, período e comprimento de onda em cordas sonoras e visualize a interferência construtiva em tempo real.
+                </p>
+              </div>
+              <!-- Action Section -->
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <div class="flex items-center gap-space-xs text-outline">
+                  <span class="material-symbols-outlined text-[18px]">
+                    signal_cellular_alt
+                  </span>
+                  <span class="font-label-sm text-label-sm">
+                    Fundamental
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors shadow-sm group-hover:shadow-md" data-path="experimento-onda-harmonica" href="#">
+                  <span>
+                    Iniciar Simulação
+                  </span>
+                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+            </article>
+            <!-- CARD 3: Gráficos de Parábola e Balística -->
+            <article class="group bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div>
+                <!-- Thumbnail Area with Graphic Badge -->
+                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container flex items-center justify-center">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Interactive mathematical parabolic trajectory projection on clean Cartesian plane with glowing quadratic curve f of x equals ax squared plus bx plus c, vector coordinates and peak apex indicator, scientific educational software." src="../images/experimentos/parabola-balistica.jpg" alt="Interactive mathematical parabolic trajectory projection on clean Cartesian plane with glowing quadratic curve f of x equals ax squared plus bx plus c, vector coordinates and peak apex indicator, scientific educational software.">
+                  <div class="absolute top-space-sm left-space-sm">
+                    <span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-lowest/90 backdrop-blur-md font-label-md text-label-md text-tertiary font-bold shadow-sm">
+                      Experimento 03
+                    </span>
+                  </div>
+                  <div class="absolute bottom-space-sm right-space-sm">
+                    <span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-on-surface/80 backdrop-blur-md font-label-sm text-label-sm text-on-primary">
+                      <span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">
+                        show_chart
+                      </span>
+                      12 min • Álgebra
+                    </span>
+                  </div>
+                </div>
+                <!-- Tags & Category Chips -->
+                <div class="flex items-center gap-space-xs mt-space-md flex-wrap">
+                  <span class="px-space-sm py-space-xs rounded-lg bg-tertiary-fixed/30 text-tertiary font-label-sm text-label-sm font-semibold">
+                    Matemática
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Funções
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Balística
+                  </span>
+                </div>
+                <!-- Title and Description -->
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm font-bold tracking-tight group-hover:text-primary transition-colors">
+                  Gráficos de Parábola e Balística
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs line-clamp-2 leading-relaxed">
+                  Conecte a função quadrática com o lançamento oblíquo real ajustando ângulo de disparo e velocidade inicial.
+                </p>
+              </div>
+              <!-- Action Section -->
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <div class="flex items-center gap-space-xs text-outline">
+                  <span class="material-symbols-outlined text-[18px]">
+                    signal_cellular_alt
+                  </span>
+                  <span class="font-label-sm text-label-sm">
+                    Ensino Médio
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors shadow-sm group-hover:shadow-md" data-path="experimento-graficos-parabola" href="#">
+                  <span>
+                    Iniciar Simulação
+                  </span>
+                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+            </article>
+            <!-- CARD 4: Eletrostática e Cargas Elétricas -->
+            <article class="group bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div>
+                <!-- Thumbnail Area with Graphic Badge -->
+                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container flex items-center justify-center">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Interactive Coulomb law electrostatic simulation with glowing positive red protons and negative blue electrons surrounded by electric field lines and repulsive force vectors in modern educational 3d rendering." src="../images/experimentos/eletrostatica.jpg" alt="Interactive Coulomb law electrostatic simulation with glowing positive red protons and negative blue electrons surrounded by electric field lines and repulsive force vectors in modern educational 3d rendering.">
+                  <div class="absolute top-space-sm left-space-sm">
+                    <span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-lowest/90 backdrop-blur-md font-label-md text-label-md text-primary font-bold shadow-sm">
+                      Experimento 04
+                    </span>
+                  </div>
+                  <div class="absolute bottom-space-sm right-space-sm">
+                    <span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-on-surface/80 backdrop-blur-md font-label-sm text-label-sm text-on-primary">
+                      <span class="material-symbols-outlined text-[13px] text-secondary-fixed">
+                        bolt
+                      </span>
+                      18 min • Laboratório
+                    </span>
+                  </div>
+                </div>
+                <!-- Tags & Category Chips -->
+                <div class="flex items-center gap-space-xs mt-space-md flex-wrap">
+                  <span class="px-space-sm py-space-xs rounded-lg bg-secondary-fixed/20 text-secondary font-label-sm text-label-sm font-semibold">
+                    Física
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Eletricidade
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Lei de Coulomb
+                  </span>
+                </div>
+                <!-- Title and Description -->
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm font-bold tracking-tight group-hover:text-primary transition-colors">
+                  Eletrostática e Cargas Elétricas
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs line-clamp-2 leading-relaxed">
+                  Descubra as forças atrativas e repulsivas entre partículas eletricamente carregadas e observe as linhas do campo elétrico.
+                </p>
+              </div>
+              <!-- Action Section -->
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <div class="flex items-center gap-space-xs text-outline">
+                  <span class="material-symbols-outlined text-[18px]">
+                    signal_cellular_alt
+                  </span>
+                  <span class="font-label-sm text-label-sm">
+                    Intermediário
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors shadow-sm group-hover:shadow-md" data-path="experimento-eletrostatica" href="#">
+                  <span>
+                    Iniciar Simulação
+                  </span>
+                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+            </article>
+            <!-- CARD 5: Teorema de Pitágoras Visual -->
+            <article class="group bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div>
+                <!-- Thumbnail Area with Graphic Badge -->
+                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container flex items-center justify-center">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic geometric proof of the Pythagorean Theorem with bright cyan and deep violet water liquid filling square reservoirs constructed on triangle sides, playful interactive mathematics education aesthetic." src="../images/experimentos/pitagoras.jpg" alt="Dynamic geometric proof of the Pythagorean Theorem with bright cyan and deep violet water liquid filling square reservoirs constructed on triangle sides, playful interactive mathematics education aesthetic.">
+                  <div class="absolute top-space-sm left-space-sm">
+                    <span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-lowest/90 backdrop-blur-md font-label-md text-label-md text-tertiary font-bold shadow-sm">
+                      Experimento 05
+                    </span>
+                  </div>
+                  <div class="absolute bottom-space-sm right-space-sm">
+                    <span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-on-surface/80 backdrop-blur-md font-label-sm text-label-sm text-on-primary">
+                      <span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">
+                        square_foot
+                      </span>
+                      8 min • Visual
+                    </span>
+                  </div>
+                </div>
+                <!-- Tags & Category Chips -->
+                <div class="flex items-center gap-space-xs mt-space-md flex-wrap">
+                  <span class="px-space-sm py-space-xs rounded-lg bg-tertiary-fixed/30 text-tertiary font-label-sm text-label-sm font-semibold">
+                    Matemática
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Geometria
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Trigonometria
+                  </span>
+                </div>
+                <!-- Title and Description -->
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm font-bold tracking-tight group-hover:text-primary transition-colors">
+                  Teorema de Pitágoras Visual
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs line-clamp-2 leading-relaxed">
+                  Demonstração sensorial com áreas líquidas provando que a soma dos quadrados dos catetos é igual à área da hipotenusa.
+                </p>
+              </div>
+              <!-- Action Section -->
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <div class="flex items-center gap-space-xs text-outline">
+                  <span class="material-symbols-outlined text-[18px]">
+                    signal_cellular_alt
+                  </span>
+                  <span class="font-label-sm text-label-sm">
+                    Iniciante
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors shadow-sm group-hover:shadow-md" data-path="experimento-pitagoras-visual" href="#">
+                  <span>
+                    Iniciar Simulação
+                  </span>
+                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+            </article>
+            <!-- CARD 6: Calorimetria e Mudança de Fase -->
+            <article class="group bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div>
+                <!-- Thumbnail Area with Graphic Badge -->
+                <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container flex items-center justify-center">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Thermodynamics molecular phase change simulation showing water ice melting into liquid and vaporizing with digital temperature gauge and thermal energy graphs in bright educational interface styling." src="../images/experimentos/calorimetria.jpg" alt="Thermodynamics molecular phase change simulation showing water ice melting into liquid and vaporizing with digital temperature gauge and thermal energy graphs in bright educational interface styling.">
+                  <div class="absolute top-space-sm left-space-sm">
+                    <span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-lowest/90 backdrop-blur-md font-label-md text-label-md text-primary font-bold shadow-sm">
+                      Experimento 06
+                    </span>
+                  </div>
+                  <div class="absolute bottom-space-sm right-space-sm">
+                    <span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-on-surface/80 backdrop-blur-md font-label-sm text-label-sm text-on-primary">
+                      <span class="material-symbols-outlined text-[13px] text-secondary-fixed">
+                        device_thermostat
+                      </span>
+                      14 min • Termologia
+                    </span>
+                  </div>
+                </div>
+                <!-- Tags & Category Chips -->
+                <div class="flex items-center gap-space-xs mt-space-md flex-wrap">
+                  <span class="px-space-sm py-space-xs rounded-lg bg-secondary-fixed/20 text-secondary font-label-sm text-label-sm font-semibold">
+                    Física
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Termodinâmica
+                  </span>
+                  <span class="px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                    Calor Latente
+                  </span>
+                </div>
+                <!-- Title and Description -->
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm font-bold tracking-tight group-hover:text-primary transition-colors">
+                  Calorimetria e Mudança de Fase
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs line-clamp-2 leading-relaxed">
+                  Forneça calor a substâncias isoladas, meça a curva de aquecimento e observe o movimento cinético das moléculas.
+                </p>
+              </div>
+              <!-- Action Section -->
+              <div class="pt-space-md mt-space-md flex items-center justify-between">
+                <div class="flex items-center gap-space-xs text-outline">
+                  <span class="material-symbols-outlined text-[18px]">
+                    signal_cellular_alt
+                  </span>
+                  <span class="font-label-sm text-label-sm">
+                    Intermediário
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors shadow-sm group-hover:shadow-md" data-path="experimento-calorimetria" href="#">
+                  <span>
+                    Iniciar Simulação
+                  </span>
+                  <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">
+                    arrow_forward
+                  </span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- Pagination and Explorer Controls -->
+        <div class="w-full mt-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg">
+          <div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+            <span>
+              Mostrando
+            </span>
+            <span class="font-semibold text-on-surface">
+              1 - 6
+            </span>
+            <span>
+              de 24 experimentos cadastrados
+            </span>
+          </div>
+          <!-- Interactive Pagination Bar -->
+          <div class="flex items-center gap-space-xs">
+            <button class="w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors disabled:opacity-40" disabled="" title="Página anterior">
+              <span class="material-symbols-outlined text-[20px]">
+                chevron_left
+              </span>
+            </button>
+            <button class="w-10 h-10 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center shadow-sm">
+              1
+            </button>
+            <button class="w-10 h-10 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg flex items-center justify-center transition-colors">
+              2
+            </button>
+            <button class="w-10 h-10 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg flex items-center justify-center transition-colors">
+              3
+            </button>
+            <button class="w-10 h-10 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg flex items-center justify-center transition-colors">
+              4
+            </button>
+            <button class="w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors" title="Próxima página">
+              <span class="material-symbols-outlined text-[20px]">
+                chevron_right
+              </span>
+            </button>
+          </div>
+          <!-- Quick Classroom Mode Shortcut -->
+          <a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-secondary hover:text-primary transition-colors" data-path="planos-de-aula" href="#">
+            <span class="material-symbols-outlined text-[18px]">
+              local_library
+            </span>
+            <span>
+              Acessar Guia do Educador
+            </span>
+          </a>
+        </div>
+        <!-- Interactive Search/Filter Script for Immediate Responsiveness -->
+      </div>
+  </div>
+</main>
+<footer class="w-full bg-surface-container-low mt-space-xl">
+  <div class="max-w-[1200px] mx-auto px-gutter py-margin">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl pb-space-xl">
+      <div class="md:col-span-1 flex flex-col gap-space-md">
+        <div class="flex items-center gap-space-sm">
+          <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-primary text-[20px]">science</span>
+          </div>
+          <span class="font-display text-headline-sm text-primary font-bold">Cienvolva</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Aprenda matemática e física de forma divertida, intuitiva e interativa para jovens cientistas e curiosos.</p>
+      </div>
+      <div class="flex flex-col gap-space-sm">
+        <h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Plataforma</h4>
+        <nav class="flex flex-col gap-space-xs">
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Início</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="atividades-experimentos" href="#">Laboratório Virtual</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre" href="#sobre">Metodologia</a>
+        </nav>
+      </div>
+      <div class="flex flex-col gap-space-sm">
+        <h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Educadores</h4>
+        <nav class="flex flex-col gap-space-xs">
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#educadores">Espaço dos Professores</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#educadores">Planos de Aula</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#educadores">Central de Ajuda</a>
+        </nav>
+      </div>
+      <div class="flex flex-col gap-space-sm">
+        <h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Institucional</h4>
+        <nav class="flex flex-col gap-space-xs">
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#institucional">Política de Privacidade</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#institucional">Termos de Uso</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#institucional">Créditos Científicos</a>
+        </nav>
+      </div>
+    </div>
+    <div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md">
+      <span class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Cienvolva Educação Interativa. Todos os direitos reservados.</span>
+      <div class="flex items-center gap-space-xs">
+        <span class="w-2 h-2 rounded-full bg-secondary"></span>
+        <span class="w-2 h-2 rounded-full bg-primary"></span>
+        <span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+        <span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="../js/nav.js"></script>
+  <script src="../js/atividades.js"></script>
+</body>
+</html>

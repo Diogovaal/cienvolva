@@ -13,18 +13,22 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind-config.js"></script>
 </head>
+
+
 <body class="bg-surface font-body-md text-on-surface antialiased" data-page="inicio">
 <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
   <div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-lg">
-    <a class="flex items-center gap-space-sm group" data-path="inicio" href="index.html">
-      <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-        <span class="material-symbols-outlined text-on-primary text-[24px]">science</span>
+   <!-- Card com a logo  -->
+    <a class="flex items-justify px-2 gap-space-sm group" data-path="inicio" href="index.html">
+      <div class="w-11 h-11 rounded-full shrink-0 bg-white/15 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+        <span class=" material-symbols-outlined text-on-primary text-[px]">science</span>
       </div>
-      <div class="flex flex-col">
-        <span class="font-display text-headline-sm text-primary leading-none tracking-tight">Cienvolva</span>
-        <span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide">Matemática &amp; Física</span>
+      <div class="flex flex-col ">
+        <span class="font-display text-headline-sm text-white  leading-none tracking-tight">Cienvolva</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide ">Matemática &amp; Física</span>
       </div>
     </a>
+
     <nav class="hidden md:flex items-center gap-space-sm">
       <a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="index.html">Início</a>
       <a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="atividades-experimentos" href="pages/atividades.html">Atividades / Experimentos</a>

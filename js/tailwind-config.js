@@ -51,7 +51,7 @@ tailwind.config = {
         "on-secondary-fixed": "#001f26",
         "on-primary-container": "#fffbff",
         "surface-container": "#eaedff",
-        "on-surface-variant": "#464554",
+        "on-surface-variant": "#1c1c1d",
         "surface-container-lowest": "#ffffff",
         "on-secondary-container": "#006172",
       },
